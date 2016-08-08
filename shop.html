@@ -29,7 +29,7 @@
 				<ul class="breadcrumbs">
 					<li><a href="#">Главная</a></li>
 					<li><a href="#">Магазин</a></li>
-					<li><a href="#">Средства для ухода</a></li>
+					<li><a class="current">Средства для ухода</a></li>
 				</ul>
 
 				<section class="filters">
@@ -47,7 +47,7 @@
 						<label><input type="radio" name="products-type" value="care" checked>Средства для ухода</label><br>
 						<label><input type="radio" name="products-type" value="accessories">Аксессуары</label><br>
 
-						<button type="submit">Показать</button>
+						<a class="show-results-btn" onclick="submit()" href="/results.html" id="showResultsBtn">Показать</a>
 					</form>
 				</section>
 				<section class="products-list">
@@ -56,7 +56,7 @@
 						<a href="#" class="product-name">Набор для путешествий<br>"BAXTER OF CALIFORNIA"</a>
 						<div class="block-buy">
 							<span class="price">2900 РУБ.</span>
-							<a href="#" class="btn-buy">Купить</a>
+							<button type="button" onclick="addToCart()">Купить</button>
 						</div>
 					</article>
 					<article class="product">
@@ -64,7 +64,7 @@
 						<a href="#" class="product-name">Увлажняющий кондиционер<br>"BAXTER OF CALIFORNIA"</a>
 						<div class="block-buy">
 							<span class="price">750 РУБ.</span>
-							<a href="#" class="btn-buy">Купить</a>
+							<button type="button" onclick="addToCart()">Купить</button>
 						</div>
 					</article>
 					<article class="product">
@@ -72,7 +72,7 @@
 						<a href="#" class="product-name">Гель для волос<br>"SUAVECITO"</a>
 						<div class="block-buy">
 							<span class="price">290 РУБ.</span>
-							<a href="#" class="btn-buy">Купить</a>
+							<button type="button" onclick="addToCart()">Купить</button>
 						</div>
 					</article>
 					<article class="product">
@@ -80,7 +80,7 @@
 						<a href="#" class="product-name">Глина для укладки волос<br>"AMERICAN CREW"</a>
 						<div class="block-buy">
 							<span class="price">500 РУБ.</span>
-							<a href="#" class="btn-buy">Купить</a>
+							<button type="button" onclick="addToCart()">Купить</button>
 						</div>
 					</article>
 					<article class="product">
@@ -88,7 +88,7 @@
 						<a href="#" class="product-name">Гель для волос<br>"AMERICAN CREW"</a>
 						<div class="block-buy">
 							<span class="price">300 РУБ.</span>
-							<a href="#" class="btn-buy">Купить</a>
+							<button type="button" onclick="addToCart()">Купить</button>
 						</div>
 					</article>
 					<article>
@@ -96,11 +96,28 @@
 						<a href="#" class="product-name">Набор для бритья<br>"BAXTER OF CALIFORNIA"</a>
 						<div class="block-buy">
 							<span class="price">3900 РУБ.</span>
-							<a href="#" class="btn-buy">Купить</a>
+							<button type="button" onclick="addToCart()">Купить</button>
 						</div>
 					</article>
 				</section>
+				<ul class="pagination">
+					<li><a href="#">1</a></li>
+					<li><a class="current">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+				</ul>
 			</div>
 		</main>
+		<script>
+			window.onload = function() {
+				document.getElementById("showResultsBtn").addEventListener("click", function(event) {
+					event.preventDefault();
+				});
+			}
+
+			function submit() {}
+
+			function addToCart() {}
+		</script>
 	</body>
 </html>
