@@ -2,6 +2,7 @@
 <html lang="ru">
 	<head>
 		<meta charset="utf-8">
+		<title>Barbershop - shop page</title>
 		<link rel="stylesheet" href="css/styles.css">
 	</head>
 	<body>
@@ -31,7 +32,7 @@
 					<li><a href="#">Средства для ухода</a></li>
 				</ul>
 
-				<div class="filters">
+				<section class="filters">
 					<form action="#" method="POST">
 						<h2>Производители:</h2>
 						<label><input type="checkbox" name="baxter-of-california" checked>BAXTER OF CALIFORNIA</label><br>
@@ -43,12 +44,62 @@
 
 						<h2>Группы товаров:</h2>
 						<label><input type="radio" name="products-type" value="shavingAccessories">Бритвенные принадлежности</label><br>
-						<label><input type="radio" name="products-type" value="care">Средства для ухода</label><br>
+						<label><input type="radio" name="products-type" value="care" checked>Средства для ухода</label><br>
 						<label><input type="radio" name="products-type" value="accessories">Аксессуары</label><br>
 
 						<button type="submit">Показать</button>
 					</form>
-				</div>
+				</section>
+				<section class="products-list">
+					<article class="product">
+						<a href="#"><img src="img/product1.jpeg" alt='Набор для путешествий "BAXTER OF CALIFORNIA"' width="150" height="150"></a>
+						<a href="#" class="product-name">Набор для путешествий<br>"BAXTER OF CALIFORNIA"</a>
+						<div class="block-buy">
+							<span class="price">2900 РУБ.</span>
+							<a href="#" class="btn-buy">Купить</a>
+						</div>
+					</article>
+					<article class="product">
+						<a href="#"><img src="img/product2.jpeg" alt='Увлажняющий кондиционер "BAXTER OF CALIFORNIA"' width="150" height="150"></a>
+						<a href="#" class="product-name">Увлажняющий кондиционер<br>"BAXTER OF CALIFORNIA"</a>
+						<div class="block-buy">
+							<span class="price">750 РУБ.</span>
+							<a href="#" class="btn-buy">Купить</a>
+						</div>
+					</article>
+					<article class="product">
+						<a href="#"><img src="img/product3.jpeg" alt='Гель для волос "SUAVECITO"' width="150" height="150"></a>
+						<a href="#" class="product-name">Гель для волос<br>"SUAVECITO"</a>
+						<div class="block-buy">
+							<span class="price">290 РУБ.</span>
+							<a href="#" class="btn-buy">Купить</a>
+						</div>
+					</article>
+					<article class="product">
+						<a href="#"><img src="img/product4.jpeg" alt='Глина для укладки волос "AMERICAN CREW"' width="150" height="150"></a>
+						<a href="#" class="product-name">Глина для укладки волос<br>"AMERICAN CREW"</a>
+						<div class="block-buy">
+							<span class="price">500 РУБ.</span>
+							<a href="#" class="btn-buy">Купить</a>
+						</div>
+					</article>
+					<article class="product">
+						<a href="#"><img src="img/product5.jpeg" alt='Гель для волос "AMERICAN CREW"' width="150" height="150"></a>
+						<a href="#" class="product-name">Гель для волос<br>"AMERICAN CREW"</a>
+						<div class="block-buy">
+							<span class="price">300 РУБ.</span>
+							<a href="#" class="btn-buy">Купить</a>
+						</div>
+					</article>
+					<article>
+						<a href="#"><img src="img/product6.jpeg" alt='Набор для бритья "BAXTER OF CALIFORNIA"' width="150" height="150"></a>
+						<a href="#" class="product-name">Набор для бритья<br>"BAXTER OF CALIFORNIA"</a>
+						<div class="block-buy">
+							<span class="price">3900 РУБ.</span>
+							<a href="#" class="btn-buy">Купить</a>
+						</div>
+					</article>
+				</section>
 			</div>
 		</main>
 	</body>
