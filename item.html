@@ -8,7 +8,9 @@
 <body>
 	<header class="page-header">
 		<div class="layout-positioner">
-			<a class="header-logo" href="#"><img src="img/logo.jpeg" alt="LOGO" width="80" height="40"></a>
+			<a class="header-logo" href="#">
+				<img src="img/logo.jpeg" alt="LOGO" width="80" height="40">
+			</a>
 			<nav class="header-menu">
 				<ul>
 					<li><a href="#">Информация</a></li>
@@ -23,7 +25,7 @@
 			</div>
 		</div>
 	</header>
-	<main>
+	<main class="product-details">
 		<div class="layout-positioner">
 			<h1>Набор для путешествий "BAXTER OF CALIFORNIA"</h1>
 			<div class="breadcrumbs">
@@ -34,23 +36,23 @@
 					<li><a class="current">Набор для путешествий "BAXTER OF CALIFORNIA"</a></li>
 				</ul>
 			</div>
-			<section class="item-gallery">
-				<img class="image-large" src="img/item1-photo1.jpeg" alt="Фото товара 1" width="450" height="300">
-				<img class="image-small" src="img/item1-photo2.jpeg" alt="Фото товара 2" width="150" height="200">
-				<img class="image-small" src="img/item1-photo3.jpeg" alt="Фото товара 3" width="150" height="200">
-				<img class="image-small" src="img/item1-photo4.jpeg" alt="Фото товара 4" width="150" height="200">
+			<section class="product-details-gallery">
+				<img class="gallery-image-large" src="img/item1-photo1.jpeg" alt="Фото товара 1" width="450" height="300">
+				<img class="gallery-image-small" src="img/item1-photo2.jpeg" alt="Фото товара 2" width="150" height="200">
+				<img class="gallery-image-small" src="img/item1-photo3.jpeg" alt="Фото товара 3" width="150" height="200">
+				<img class="gallery-image-small" src="img/item1-photo4.jpeg" alt="Фото товара 4" width="150" height="200">
 			</section>
-			<section class="item-info">
-				<span class="status">Есть в наличии</span>
-				<span class="item-code">Артикул: DEXTER-AE</span>
-				<p class="description">
+			<section class="product-details-info">
+				<span class="product-details-status">Есть в наличии</span>
+				<span class="product-details-code">Артикул: DEXTER-AE</span>
+				<p class="product-details-description">
 					Travel kit - необходимый товар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.
 				</p>
-				<div class="block-buy">
-					<span class="price">2900 РУБ.</span>
-					<button type="button" onclick="addToCart()">КУПИТЬ</button>
+				<div class="product-buy">
+					<span class="product-buy-price">2900 РУБ.</span>
+					<button type="button" class="js-buy-btn">КУПИТЬ</button>
 				</div>
-				<section class="item-contents">
+				<section class="product-details-contents">
 					<h2>В набор входят:</h2>
 					<ul>
 						<li>Средство для умывания (50 мл)</li>
@@ -62,36 +64,28 @@
 				</section>
 			</section>
 		</div>
-		<footer class="page-footer">
-			<div class="layout-positioner">
-				<div class="contacts-info">
-					<p>
-						Барбершоп "Бородинский"<br>
-						Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-						<a href="#">Как нас найти?</a><br>
-						Телефон: +7 (495) 666-02-66
-					</p>
-				</div>
-				<div class="social-networks">
-					<span>Давайте дружить!</span>
-					<a href="#" class="social-btn social-vk">Vkontakte</a>
-					<a href="#" class="social-btn social-fb">Facebook</a>
-					<a href="#" class="social-btn social-instagram">Instagram</a>
-				</div>
-				<div class="copyright">
-					<span>Разработано:</span>
-					<a href="#" class="footer-logo">HTMLACADEMY.RU</a>
-				</div>
-			</div>
-		</footer>
-		<script>
-			function loginClicked(event) {
-				event.preventDefault();
-				// do something else
-			}
-
-			function addToCart() {}
-		</script>
 	</main>
+	<footer class="page-footer">
+		<div class="layout-positioner">
+			<div class="contacts-info">
+				<p>
+					Барбершоп "Бородинский"<br>
+					Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+					<a href="#">Как нас найти?</a><br>
+					Телефон: +7 (495) 666-02-66
+				</p>
+			</div>
+			<div class="social-networks">
+				<span>Давайте дружить!</span>
+				<a href="#" class="social-btn social-vk">Vkontakte</a>
+				<a href="#" class="social-btn social-fb">Facebook</a>
+				<a href="#" class="social-btn social-instagram">Instagram</a>
+			</div>
+			<div class="copyright">
+				<span>Разработано:</span>
+				<a href="#" class="footer-logo">HTMLACADEMY.RU</a>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>
