@@ -19,7 +19,8 @@
 					</ul>
 				</nav>
 				<div class="header-login">
-					<a href="#">Вход</a>
+					<!-- Если включен js, то обработать событие и отменить переход по ссылке, если выключен, перейти по ссылке -->
+					<a href="#" onclick="loginClicked(event)">Вход</a>
 				</div>
 			</div>
 		</header>
@@ -47,7 +48,7 @@
 						<label><input type="radio" name="products-type" value="care" checked>Средства для ухода</label><br>
 						<label><input type="radio" name="products-type" value="accessories">Аксессуары</label><br>
 
-						<a class="show-results-btn" onclick="submit()" href="/results.html" id="showResultsBtn">Показать</a>
+						<a class="show-results-btn" onclick="showResultsClicked(event)" href="/results.html" id="showResultsBtn">Показать</a>
 					</form>
 				</section>
 				<section class="products-list">
@@ -143,13 +144,15 @@
 			</div>
 		</footer>
 		<script>
-			window.onload = function() {
-				document.getElementById("showResultsBtn").addEventListener("click", function(event) {
-					event.preventDefault();
-				});
+			function loginClicked(event) {
+				event.preventDefault();
+				// do something else
 			}
 
-			function submit() {}
+			function showResultsClicked(event) {
+				event.preventDefault();
+				// do something else
+			}
 
 			function addToCart() {}
 		</script>

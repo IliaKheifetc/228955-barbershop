@@ -19,7 +19,8 @@
 				</ul>
 			</nav>
 			<div class="header-login">
-				<a href="#">Вход</a>
+				<!-- Если включен js, то обработать событие и отменить переход по ссылке, если выключен, перейти по ссылке -->
+				<a href="#" onclick="loginClicked(event)">Вход</a>
 			</div>
 		</div>
 	</header>
@@ -31,7 +32,7 @@
 					<li><a href="#">Главная</a></li>
 					<li><a href="#">Магазин</a></li>
 					<li><a href="#">Средства для ухода</a></li>
-					<li><a class="current" href="#">Набор для путешествий "BAXTER OF CALIFORNIA"</a></li>
+					<li><a class="current">Набор для путешествий "BAXTER OF CALIFORNIA"</a></li>
 				</ul>
 			</div>
 			<section class="item-gallery">
@@ -83,6 +84,11 @@
 			</div>
 		</footer>
 		<script>
+			function loginClicked(event) {
+				event.preventDefault();
+				// do something else
+			}
+
 			function addToCart() {}
 		</script>
 	</main>
