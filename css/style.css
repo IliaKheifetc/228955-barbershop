@@ -1,18 +1,194 @@
 body {
-	font-weight: 700;
-	font-size: 10px;
-	line-height: 2.4;
-	font-family: "PT Sans Narrow", "Arial", sans-serif;
-	text-transform: uppercase;
-	color: #000000;
+    padding: 0;
+    margin: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.28;
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    text-transform: uppercase;
+    color: #000000;
+    /*background-image: url("../../Shop.jpg");*/
+    background-position: 50% 0;
 }
 
 .page-heading-1 {
-	font-size: 30px;
-	line-height: 1.4;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 1.4;
 }
 
 .page-heading-2 {
-	font-size: 24px;
-	line-height: 1.25;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 24px;
+    line-height: 1.25;
+}
+
+.page-header {
+    margin-bottom: 55px; /* фоновую текстуру установлю для body, те этот промежуток между
+    page-header и main будет окрашен */
+    opacity: 0.5;
+}
+
+.layout-positioner {
+    width: 940px;
+    padding: 0 10px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 3px solid #b30000;
+    background-color: #ff8566;
+}
+
+.page-header-logo {
+    float: left;
+    width: 140px;
+    display: block;
+    height: 24px;
+}
+
+.page-header-menu {
+    float: left;
+    width: 660px;
+    min-height: 72px;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.page-header-login {
+    float: right;
+}
+
+.page-header-login a {
+    display: block;
+    width: 110px;
+    height: 72px;
+}
+
+.page-header-menu {
+    font-size: 0;
+}
+
+.page-header-menu li {
+    display: inline-block;
+    font-size: 16px;
+}
+
+main {
+    opacity: 0.5;
+}
+
+.breadcrumbs {
+    max-height: 20px;
+    margin-bottom: 52px;
+    font-size: 0px;
+}
+
+.breadcrumbs li {
+    display: inline-block;
+
+    font-size: 14px;
+}
+
+.filters {
+    float: left;
+    width: 170px;
+    min-height: 574px;
+}
+
+.products-list {
+    float: right;
+    width: 700px;
+    margin-bottom: 25px;
+}
+
+body > * {
+    outline: 3px solid #194d19;
+    background-color: #b3e6b3;
+}
+
+body > * > * {
+    outline: 3px solid #b30000;
+    background-color: #ff8566;
+}
+
+body > * > *  > * {
+    outline: 3px solid #006bb3;
+    background-color: #80ccff;
+}
+
+.product {
+    outline: 3px solid black;
+    background-color: #c68c53;
+}
+
+.pagination {
+    height: 43px;
+    margin-left: 240px;
+    margin-bottom: 49px;
+    /* margin-bottom: 49px;
+    replaced with padding-bottom of .layout-positioner */
+    clear: both;
+}
+
+.pagination li {
+    display: inline-block;
+}
+
+.product {
+    float: left;
+    width: 220px;
+    min-height: 286px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.product:nth-child(3n) {
+    margin-right: 0;
+}
+
+.page-footer {
+    padding-top: 61px;
+    padding-bottom: 41px;
+    opacity: 0.5;
+}
+
+.page-footer .contact-info {
+    float: left;
+    width: 310px;
+    min-height: 88px;
+    margin-right: 90px;
+}
+
+.page-footer .contact-info > p {
+    margin: 0;
+}
+
+.page-footer .social-networks {
+    float: left;
+    min-width: 140px;
+}
+
+.page-footer .social-networks ul {
+    padding-left: 0;
+}
+
+.page-footer .social-networks li {
+    display: inline-block;
+}
+
+.page-footer .social-networks a {
+    display: block;
+    width: 43px;
+    height: 43px;
+    background-color: #000000;
+}
+
+.page-footer .copyright {
+    float: right;
+    width: 140px;
 }
